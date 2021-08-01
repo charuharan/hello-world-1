@@ -1,35 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation,Input } from '@angular/core';
+
 @Component({
   selector: 'app-root',
-  template:`
-  <h2> welcome {{name}} </h2>
-  <h2>{{5+6}}</h2>
-  <h2>{{"Hi "+name}}</h2>
-  <h3>{{name.length}}</h3>
-  <h3>{{greet()}}</h3>
-  <h4>{{siteurl}}</h4>
-  <h2 [class]="success">{{name}}</h2>
-  <input [disabled]="isdisabled" type="text" value="Charu">`
-  ,
-  styles:[`
-  .text-success{
-    color: green;
-  }
-  .text-danger{
-    color:red;
-  }
-  .text-special{
-    font-style: italic;
-  }`]
+  templateUrl: /*`
+    <app-no-encapsulation></app-no-encapsulation>
+    <app-emulated-encapsulation></app-emulated-encapsulation>
+    <app-shadow-dom-encapsulation></app-shadow-dom-encapsulation>
+  `*/'./app.component.html',
+  styleUrls: [
+    /*'app-no-encapsulation, app-emulated-encapsulation, app-shadow-dom-encapsulation { display: block; max-width: 500px; padding: 5px; margin: 5px 0; }',
+    'app-no-encapsulation { border: solid 2px red; }',
+    'app-emulated-encapsulation { border: solid 2px green; }',
+    'app-shadow-dom-encapsulation { border: solid 2px blue; }',*/  
+  ],
+  /*encapsulation: ViewEncapsulation.None,*/
 })
-export class AppComponent {
-  public name="charu";
-  public isdisabled=true;
-  public success="text-success";
-  public special="text-special";
-  public siteurl=window.location.href;
-  greet(){
-    return "Angular";
-  }
-  title = 'hello-world';
+export class AppComponent { 
+  n1="interaction";
 }
+
