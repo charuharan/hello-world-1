@@ -1,0 +1,75 @@
+{
+  "@@locale": "en-US",
+  "2077201021623808633": "Hello i18n!",
+  "@2077201021623808633": {
+    "description": "An introduction header for this sample",
+    "x-meaning": "site header",
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "1", "column": "62" },
+        "end": { "line": "1", "column": "73" }
+      }
+    ]
+  },
+  "5206857922697139278": "I don't output any element",
+  "@5206857922697139278": {
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "2", "column": "19" },
+        "end": { "line": "2", "column": "45" }
+      }
+    ]
+  },
+  "392942015236586892": "Angular logo",
+  "@392942015236586892": {
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "3", "column": "36" },
+        "end": { "line": "3", "column": "48" }
+      }
+    ]
+  },
+  "4606963464835766483": "Updated {$ICU}",
+  "@4606963464835766483": {
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "4", "column": "11" },
+        "end": { "line": "4", "column": "103" }
+      }
+    ]
+  },
+  "2002272803511843863": "{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {{INTERPOLATION} minutes ago}}",
+  "@2002272803511843863": {
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "4", "column": "19" },
+        "end": { "line": "4", "column": "103" }
+      }
+    ]
+  },
+  "3560311772637911677": "The author is {$ICU}",
+  "@3560311772637911677": {
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "5", "column": "11" },
+        "end": { "line": "5", "column": "84" }
+      }
+    ]
+  },
+  "7670372064920373295": "{VAR_SELECT, select, male {male} female {female} other {other}}",
+  "@7670372064920373295": {
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "5", "column": "25" },
+        "end": { "line": "5", "column": "84" }
+      }
+    ]
+  }
+}

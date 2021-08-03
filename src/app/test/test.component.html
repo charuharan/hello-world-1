@@ -1,1 +1,38 @@
-<p>test works!</p>
+  <h2>{{name}}</h2>
+  <h2 class="text-success">class attribute</h2>
+  <h2 [class]="successclass">class binding</h2>
+  <h2 [class.text-danger]="haserror">condition class binding</h2>
+  <h2 [ngClass]="object">conditionally applying all styles using ngClass directive</h2>
+  <input [disabled]="true" [id]="text" type="text" value="charu">
+  <h2 [style.color]="'orange'">style binding</h2>
+  <h2 [style.color]="haserror ? 'green' : 'pink'"> conditional style binding</h2>
+  <h2 [ngStyle]="colors">conditionally applying all style using ngStyle directive</h2>
+  <button (click)="onClick()">event-binding</button><br>
+  {{greeting}}<br>
+  <button (click)="greeting='template statement'">event-binding</button><br>
+  <input #temref type="text">
+  <button (click)=message(temref.value)>value of text</button><br>
+  {{name2}}<br>
+  <input [(ngModel)]="name2" type="text">
+  <div *ngIf="displayname; then thenblock; else elseblock"></div>
+  <ng-template #thenblock>
+  <h2>ngIf directive</h2>
+  </ng-template>
+  <ng-template #elseblock>
+  <h2>hidden</h2>
+  </ng-template>
+  <div [ngSwitch]="color1">
+  <h2 *ngSwitchCase="'red'">you have choose <em>red</em> color</h2>
+  <h2 *ngSwitchCase="'pink'">you have choose <em>red</em> color</h2>
+  <h2 *ngSwitchCase="'green'">you have choose <em>red</em> color</h2>
+  <h2 *ngSwitchDefault>pick again</h2>
+  </div>
+  <ng-container *ngFor="let color of arr;index as i;odd as o">
+  <h2>{{o}}{{i}}{{color}}</h2>
+  </ng-container>
+  <h2>{{name3 | uppercase}}</h2>
+  <h2>{{name3 | slice:0:3}}</h2>
+  <h2>{{1000 | number: '4.0'}}</h2>
+  <h2>{{1000 |currency:'INR'}}</h2>
+  <h2>{{date |date:'short'}}</h2>
+  <h2>{{date | date:'mediumDate'}}</h2>
